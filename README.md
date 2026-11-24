@@ -1,11 +1,11 @@
-# Task Manager — Angular 21
+# Task Manager — Angular 21 
 
 A full-stack task management web app built with Angular 21. Users can register, log in and manage their own to-do list: create, edit, complete and delete tasks through a REST API protected by JWT.
 
 I built this during an Angular training course (Formation CPF) to practise the core skills of a modern Angular front end: standalone components, signals, reactive forms, routing and HTTP communication with an authenticated API.
 
 ![Home page](public/home.png)
-FIY : /|\ 0 lines of code where written using IA tool /|\
+
 ---
 
 ## Features
@@ -105,3 +105,5 @@ These are the improvements I plan to make next:
 
 **Feker Ben Amamou**: Angular / front-end developer
 GitHub: [@Feker88](https://github.com/Feker88)
+
+/|\ 0 lines of code where written using IA tool /|\
