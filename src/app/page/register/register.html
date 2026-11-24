@@ -1,0 +1,20 @@
+<!-- [attribut]
+(event)
+{{variable affichage}} -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+        <h2>Inscription</h2>
+        
+        <input id="IdEmail" type="email" placeholder="Email" value="" formControlName="email">
+          <!-- input touché && emial invalid  -->
+        <!-- <small *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched"> Format Invalide</small>> -->
+        @if (registerForm.get('email')?.invalid && registerForm.get('email')?.touched) {
+        <small> Format Invalide</small>    
+        }        
+        <input id="IdPassword" type="password" placeholder="Mot de passe" value="" formControlName="password">
+        @if (registerForm.get('password')?.invalid && registerForm.get('password')?.touched) {
+        <small> Le mot de passe doit contenir au moins 6 caractères</small>    
+        }
+        <small>{{error()}}</small>
+        <button>S'inscrire</button>
+</form>

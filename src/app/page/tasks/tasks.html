@@ -1,0 +1,8 @@
+<div>
+    <h2>Mes Tâches</h2>
+    <a class="inline-block mb-4 text-blue-600 underline" routerLink="create.html">+ Nouvelle tâche</a>
+@for(looptask of tasks(); track $index)
+{ 
+    <app-task [task]="looptask" (updatedTask)="RefreshTask()"></app-task>
+}
+</div>

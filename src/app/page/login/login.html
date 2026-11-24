@@ -1,0 +1,11 @@
+<!-- [attribut]
+(event)
+{{variable affichage}} -->
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <h2>Login</h2>        
+        <input id="IdEmail" type="email" placeholder="Email" value="" formControlName="email">          
+        <input id="IdPassword" type="password" placeholder="Mot de passe" value="" formControlName="password">        
+        <small>{{error()}}</small>
+        <button>Se connecter</button>
+</form>

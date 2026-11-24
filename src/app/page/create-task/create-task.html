@@ -1,0 +1,9 @@
+<form [formGroup]="taskForm"(ngSubmit)="CreateTask()">
+    <h2>Créer une tâche</h2>
+    <input  placeholder="Titre" formControlName="title" />
+    @if (taskForm.get('title')?.invalid && taskForm.get('title')?.touched) {
+      <span class="error">Le titre est requis</span>
+    }
+    <textarea placeholder="Description" formControlName="description"></textarea>
+    <button>Créer</button>
+</form>
